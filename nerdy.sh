@@ -53,17 +53,23 @@ banner
 fonts () {
 echo -e '\nThe following type of fonts can be installed'
 echo -e '- Hack\n- RobotoMono\n- UbuntuMono\n- FiraCode\n- FiraMono\n- DejaVu\n- JetBrains\n- LiberationMono\n- Noto\n- Iconsolata'
-echo -e '\nRun the script with the desired font! "./nfinstall Hack"'
+echo -e '\nRun the script with the desired font! "./nerdy.sh Hack"'
 }
-
-fonts
-
 
 errorhand () {
-	echo -e "\nNot able to install font, check the syntax of your argument and try again"
+	echo -e "\nNot able to install font, check the syntax of your argument and try again\nTry './nerdy.sh -h' for help"
 }
 
-if [[ $1 = 'Hack' ]]; then 
+help () {
+	fonts
+	echo -e 'Not sure what type of font you want to use?'
+	echo -e 'You can go this website and get your test ride!'
+	echo -e 'https://www.programmingfonts.org/'
+}
+
+if [[ $1 = '-h' ]] || [[ $1 = '--help' ]]; then
+	help
+elif [[ $1 = 'Hack' ]]; then 
 	echo $Download
 	echo $Hack
 	wget $Hack
