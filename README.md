@@ -10,7 +10,11 @@ Just as easy!
 
 ## Download
 ```bash
-wget https://github.com/DarthNeder/nerdy/releases/download/v1.0.0/nerdy && bash nerdy -h```
+
+wget https://github.com/DarthNeder/nerdy/releases/download/v1.0.0/nerdy && bash nerdy -h
+
+```
+
 Copy this to your terminal and it will download the latest release and run the help command.
 
 **The installable fonts are the following:**
