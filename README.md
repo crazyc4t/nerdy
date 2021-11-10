@@ -4,7 +4,7 @@
 Just run it with the font you want!
 
 ```bash
-./nerdy.sh RobotoMono
+bash nerdy RobotoMono
 ```
 Just as easy!
 
